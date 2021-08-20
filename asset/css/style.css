@@ -92,6 +92,17 @@ body {
     }
   }
 
+  /***************************************media queries*****************/
+
+  @media(max-width: 768px){
+
+    .navbar{
+
+      text-align: center!important;
+    }
+
+
+  }
 
 
   .banner{
