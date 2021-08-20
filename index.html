@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    
+    
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+    <link href="asset/css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='icon' type='image/*' href='#'>
+
+      
+    
+    <title>Fitness studio</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#onlinecoaching">Online Coaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                
+                
+              </ul>
+              
+              <form class="d-flex">
+                <!--
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                -->
+                <!--<button class="btn btn-outline-success" type="submit">Sign In</button>--->
+                <a href="sigin.html"> 
+                    <button type="button" class="btn btn-secondary">Sign In</button>
+                </a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+      
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+                <img class="banner" src="asset/photos/maxresdefault.jpg" alt="banner">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Example headline.</h1>
+                  <p>Some representative placeholder content for the first slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-secondary" href="#">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+              <img class="banner" src="asset/photos/ban2.jpg" alt="banner">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-secondary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+              <img class="banner" src="asset/photos/ban3.jpg" alt="banner">
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-lg btn-secondary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+      
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="asset/photos/logo1.jpg" alt="banner">
+              <h2>Heading</h2>
+              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="asset/photos/logo2.jpg" alt="banner">
+              <h2>Heading</h2>
+              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <!--<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+              <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="asset/photos/logo3.jpg" alt="banner">
+              <h2>Heading</h2>
+              <p>And lastly this, the third column of representative placeholder content.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+
+
+          <!------------About------------->
+
+      
+      
+          <!-- START THE FEATURETTES -->
+          
+          <span id="about" style="color: white;">Aaa</span>
+
+
+          <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">About Us</h1>
+              <p class="col-md-8 fs-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat eos, enim nam, minima non earum soluta adipisci saepe voluptatem laborum eum consequatur! Quidem odio numquam dignissimos praesentium perspiciatis ipsa porro.</p>
+              <!---<button class="btn btn-primary btn-lg" type="button">Example button</button>-->
+            </div>
+          </div>
+      
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 text-white bg-dark rounded-3">
+                <h2>Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis beatae ipsa iure provident eaque earum, harum vero necessitatibus qui, maiores maxime itaque eius! Velit dignissimos eaque perferendis error nihil!</p>
+                <!--<button class="btn btn-outline-light" type="button">Example button</button>-->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Vission</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda laboriosam aperiam explicabo necessitatibus deleniti nobis accusamus accusantium fugit numquam optio nemo nostrum dolor tempore, perferendis rem, voluptatum exercitationem a harum.</p>
+                <!---<button class="btn btn-outline-secondary" type="button">Example button</button>-->
+              </div>
+            </div>
+          </div>
+
+        
+
+
+          <span id="onlinecoaching" style="color: white;">Aaa</span>
+          <hr class="featurette-divider">
+          
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+                <h1 class="featurette-heading">Online Coaching. <span class="text-muted">Feel free to enroll here.</span></h1>
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+            </div>
+            <div class="col-md-5">
+              <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="asset/photos/image1.jpg" alt="image">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+              <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="asset/photos/image2.jpg" alt="image">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+              <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="asset/photos/image3.jpg" alt="image">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+
+
+
+          <!----------------------Pricing----------------->
+
+
+        <span id="pricing" style="color: white;">Aaa</span>
+          
+        <header >
+          <div  class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal"  >Pricing</h1>
+            <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+          </div>
+        </header>
+      
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-secondary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-secondary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm ">
+                <div class="card-header py-3 ">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-secondary">Get started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          
+        </main>
+        <!------counts-------->
+
+
+        <hr class="featurette-divider">
+
+            <section class="project-work">
+              <div class="container headings text-center">
+                <p class="text-center fw-bold">CUSTOMER ENROLLED WITH US</p>
+              </div>
+            
+              <div class="container d-flex justify-content-around align-items-center text-center">
+                <div>
+                  <h1 class='count'>2500</h1>
+                  <p>Total Customer</p>
+                </div>
+            
+                <div>
+                  <h1 class='count'>1750</h1>
+                  <p>Old Clients</p>
+                </div>
+            
+                <div>
+                  <h1 class='count'>300</h1>
+                  <p>Awards Won</p>
+                </div>
+            
+                <div>
+                  <h1 class='count'>500</h1>
+                  <p>Certified Trainer</p>
+                </div>
+              </div>
+            </section>
+
+        <!------Custom cards------->
+
+            <hr class="featurette-divider">
+
+              <div class="container px-4 py-5" id="custom-cards">
+                <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('asset/photos/card1.jfif');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="asset/photos/globe.svg" alt="globe" width="32" height="32" class="rounded-circle border border-white">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>Earth</small>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>3d</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('asset/photos/card2.jfif');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="asset/photos/globe.svg" alt="globe" width="32" height="32" class="rounded-circle border border-white">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>India</small>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>4d</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('asset/photos/card3.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                            <img src="asset/photos/globe.svg" alt="globe" width="32" height="32" class="rounded-circle border border-white">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>California</small>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>5d</small>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+          <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+      
+      
+        <!-- FOOTER -->
+        <!--<footer class="container">
+          <p class="float-end"><a href="#">Back to top</a></p>
+          <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+      </main>
+       -->
+
+       <!-- FOOTER -->
+       <hr class="featurette-divider">
+
+
+      <div class="container footer">
+            <h1 id="contact">ATHETICS<span style="color: aqua;">GYM</span></h1>
+            <em>Fitness center</em>
+        <footer class="py-5">
+            <div class="row">
+            <!--<div class="col-2">-->
+              <div class="col-lg-3 col-md-6 col-12">
+                <h5>ACCOUNT</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wishlist</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Checkout</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Account</a></li>
+                
+                </ul>
+            </div>
+
+            <!--<div class="col-2">-->
+                <div class="col-lg-3 col-md-6 col-12">
+                <h5>CUSTOMER SERVICE</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">size guide</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gift Certificate</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Site Map</a></li>
+               
+                </ul>
+            </div>
+
+            <!----<div class="col-2">--->
+              <div class="col-lg-3 col-md-6 col-12">
+                <h5>ABOUT FITNESS</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carrers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gender pay report</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Secure Shopping</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Term & condition</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Returns & Refunds</a></li>
+                </ul>
+            </div>
+
+            <!----<div class="col-4 offset-1">------>
+              <div class="col-lg-3 col-md-6 col-12">
+                <form>
+                <h5>Subscribe to our gym</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-secondary" type="button">Subscribe</button>   
+                </div>
+                </form>
+                <div class="col-12">
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2 textinline"><a href="#" class="nav-link p-0 text-muted"><img class="ms-3 bi" width="24" height="24"  src="asset/photos/geo-alt-fill.svg" alt="address"><span style="margin-left: 10px;">Shanti Nagar, Thane</span></a></li>
+                    <li class="nav-item mb-2 textinline"><a href="tel:+918928232985" title="Call me!" target="_blank" class="nav-link p-0 text-muted"><img class="ms-3 bi" width="24" height="24"  src="asset/photos/telephone.svg" alt="call"><span style="margin-left: 10px;">9167386489</span></a></li>
+                    <li class="nav-item mb-2 textinline"><a href="#" class="nav-link p-0 text-muted"><img class="ms-3 bi" width="24" height="24"  src="asset/photos/envelope.svg" alt="mail"><span style="margin-left: 10px;">aakashgautam916@gmail.com</span></a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2021 Company, Inc. All rights reserved | Designed & Developed by Aakash Gautam</p>
+            
+            <ul class="list-unstyled d-flex">
+                <!--<li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>-->
+                <a class="link-dark" href="https://www.instagram.com/aakashgautam916/"> <img class="ms-3 bi" width="24" height="24"  src="asset/photos/instagram.svg" alt="instagram"> </a>
+                <a class="link-dark" href="https://twitter.com/aakashgautam916"> <img class="ms-3 bi" width="24" height="24"  src="asset/photos/twitter.svg" alt="twitter"> </a>
+                <a class="link-dark" href="https://www.facebook.com/vishal.gautam.7334"> <img class="ms-3 bi" width="24" height="24"  src="asset/photos/facebook.svg" alt="facebook"> </a>
+                <a class="link-dark" href="https://www.linkedin.com/in/aakash-gautam-86b0b31b7/"> <img class="ms-3 bi" width="24" height="24"  src="asset/photos/linkedin.svg" alt="linkedin"> </a>
+                
+            </ul>
+            </div>
+
+            
+            
+        </footer>
+
+        
+
+
+        <!-- fixed whatsapp position start-->
+        <div class="what">
+            <a href="https://api.whatsapp.com/send/?phone=919167386489&text=Hi 
+            Aakash, I saw the website you develop and following are my requirement:" title="WhatsApp Us!" target="_blank">
+            <img src="asset/photos/whatsapp-square-brands.svg">
+            </a>
+        </div>
+
+        <div class="call">
+            <a href="tel:+918928232985" title="Call me!" target="_blank">
+            <img src="asset/photos/phone-square-alt-solid.svg">
+            </a>
+        </div>
+        
+        
+
+        <!-- fixed whatsapp position end -->
+
+
+
+
+
+      </div>
+
+
+
+      <!--------------------------Jquery----------------------------------->
+      
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+		 
+     <!-----Not Found (self) start------->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>  
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+
+
+       <script>
+        $('.count').counterUp({
+        delay:10,
+        time:3000
+        })
+
+      </script>
+
+
+
+
+       
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
